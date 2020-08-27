@@ -385,7 +385,7 @@ endif
 
 	# Copy artifacts for upload to GitHub.
 	mkdir -p bin/github
-	$(foreach var,$(VALIDARCHES), cp bin/$(var)/install bin/github/install-$(var);)
+	$(foreach var,$(VALIDARCHES), cp bin/$(var)/calico bin/github/calico-$(var);)
 	cp bin/windows/calico.exe bin/github/calico.exe
 	cp bin/windows/calico-ipam.exe bin/github/calico-ipam.exe
 
